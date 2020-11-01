@@ -19,7 +19,7 @@ class HelloControllerTest {
 
     @Test
     void testIndex() {
-        assertEquals(controller.greeting, controller.index());
+        assertEquals(controller.GREETING, controller.index());
     }
 
     @Test
