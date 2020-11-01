@@ -26,4 +26,9 @@ class HelloControllerTest {
     void testGetName() {
         assertEquals("Hello Dave\n", controller.greet("Dave"));
     }
+
+    @Test
+    public void testGreet() {
+        assertTrue(controller.greet("Dave").endsWith("Dave\n"));
+    }
 }
