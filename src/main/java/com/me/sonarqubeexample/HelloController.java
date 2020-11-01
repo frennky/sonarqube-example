@@ -11,7 +11,7 @@ import java.util.Date;
 @RestController
 public class HelloController {
 
-    public static String greeting = String.format("Greetings from Spring Boot!%n");
+    public static final String greeting = String.format("Greetings from Spring Boot!%n");
 
     @RequestMapping("/")
     public String index() {
