@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  application-example:
+    image: sonarqube-example:${APP_IMAGE_VERSION}
+    container_name: application
+    build:
+      context: .
+      args:
+        JAR_FILE: sonarqube-example-${APP_BUILD_VERSION}.jar
+    ports:
+      - 8080:8080

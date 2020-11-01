@@ -1,0 +1,6 @@
+*
+!.mvn/
+!src/
+!pom.xml
+!mvnw
+!.env
